@@ -16,4 +16,9 @@ public class TelaCadastroCliente extends MolduraAbstract {
 		super.add(new MioloCadastroCliente(), BorderLayout.CENTER);
 	}
 
+	public void setCloseAction(Object object) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
