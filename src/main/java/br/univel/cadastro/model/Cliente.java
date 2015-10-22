@@ -2,12 +2,12 @@ package br.univel.cadastro.model;
 
 public class Cliente {
 
-	private int id;
-	private String nome;
-	private String endereco;
-	private String telefone;
-	private String cidade;
-	private Uf uf;
+	protected int id;
+	protected String nome;
+	protected String endereco;
+	protected String telefone;
+	protected String cidade;
+	protected Uf uf;
 
 	public int getId() {
 		return id;

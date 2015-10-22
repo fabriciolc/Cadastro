@@ -6,10 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JSplitPane;
 import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
 import javax.swing.JMenu;
+import javax.swing.JMenuItem;
 import javax.swing.JTabbedPane;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -46,20 +45,15 @@ public class TelaPrincipal extends JFrame {
 		setJMenuBar(menuBar);
 		
 		JMenu mnCadastros = new JMenu("Cadastros");
-		mnCadastros.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-		
-			}
-		});
 		menuBar.add(mnCadastros);
 		
-		JMenuItem mntmCadastro = new JMenuItem("Cadastro");
-		mntmCadastro.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-					tabbedPane.addTab("Tela", new JPanel());
+		JMenuItem mntmCliente = new JMenuItem("Cliente");
+		mntmCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				tabbedPane.addTab("Tela ", new TelaCadastroCliente());
 			}
 		});
-		mnCadastros.add(mntmCadastro);
+		mnCadastros.add(mntmCliente);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
